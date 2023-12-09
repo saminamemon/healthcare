@@ -1,0 +1,41 @@
+{
+  "name": "hackathon",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^4.25.4",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.18.0",
+    "@stripe/stripe-js": "^2.1.10",
+    "@types/node": "20.4.4",
+    "@types/react": "18.2.15",
+    "@types/react-dom": "18.2.7",
+    "@vercel/postgres": "^0.4.2",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.28.6",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.12",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.287.0",
+    "next": "^13.5.4",
+    "next-sanity": "^5.5.8",
+    "openai": "^4.20.1",
+    "postcss": "^8.4.31",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "sanity": "^3.18.0",
+    "styled-components": "5.2",
+    "swiper": "^11.0.4",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  }
+}
