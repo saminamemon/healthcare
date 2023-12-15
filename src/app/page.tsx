@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Slug from "@/components/Slug";
 import Feature from "@/components/Feature";
 import Slider from "@/components/Slider";
+import Chatgpt from "@/components/Chatgpt";
 
 
 
@@ -25,7 +26,7 @@ export default function Home() {
       <Slider />
       <Slug />
      
-
+<Chatgpt />
       <Slider />
       <Feature /> 
 

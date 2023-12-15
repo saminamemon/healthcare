@@ -3,7 +3,7 @@
 import CartItems from '@/components/CartItems'
 import React from 'react'
 
-export default function cart() {
+export  function cart() {
   return (
     <>
 

@@ -1,7 +1,7 @@
 "use client";
 import { useAuth } from "@clerk/nextjs";
 import React, { useEffect, useState } from "react";
-
+import Image from "next/image";
 
 export default function CartItems() {
   const [products, setProducts] = useState<any>(null);
@@ -22,7 +22,7 @@ export default function CartItems() {
         }, 0);
         setTotalAmount(total);
       });
-  }, [isSignedIn, state]);
+  }, [isSignedIn, state,userId]);
 
   async function deleteProduct(product_title: any) {
     const res = await fetch("/api/cart", {
@@ -87,7 +87,7 @@ export default function CartItems() {
           <div className="grid grid-cols-1 p-5 sm:grid-cols-3 justify-center gap-x-10">
             {products?.map((item: any, index: number) => (
               <div className="flex" key={index}>
-                <img
+                <Image
                   src={item.image_url}
                   alt=""
                   className="w-56 h-56"

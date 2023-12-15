@@ -11,11 +11,14 @@ export default function ProductDetails({
   filteredData: any;
 
 }) {
-  const { userId } = useAuth();
+  const {isSignedIn, userId } = useAuth();
   console.log(userId);
   const [quantity, setQuantity] = useState(1);
-  const [paymentmethod, setpaymentmethod] = useState<string>('online'); // Default to online payment
+  const [paymentmethod, setpaymentmethod] = useState<string>('online');
+ 
+ 
 
+ 
   const handlepaymentmethodChange = (method: string) => {
     setpaymentmethod(method);
   };
@@ -52,10 +55,11 @@ export default function ProductDetails({
     } catch (error) {
       console.log("Error posting data to the server:", error);
     }
-  };
+  };[isSignedIn]
 
   return (
     <>
+     {isSignedIn ? (
     <div className="bg-white">
       <div className="pb-16 pt-6 sm:pb-24">
         <div className="mx-auto mt-8 max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -161,7 +165,11 @@ export default function ProductDetails({
       </div>
     </div>
 </div>
-
+ ) : (
+  <div>
+    <h1>Please Login First</h1>
+  </div>
+)}
 </>
   )
 }

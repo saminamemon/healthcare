@@ -1,5 +1,3 @@
-import React from "react";
-
 const Slider = () => {
   return (
     <>
@@ -15,12 +13,13 @@ const Slider = () => {
           <li>Physicans</li>
           <li>Lab</li>
           <li>Appointments</li>
-          <li>world's Best team </li>
+          <li>world&apos;s Best team </li>
           <li>Our Team</li>
         </div>
       </div>
     </>
   );
-};
-
-export default Slider;
+ };
+ 
+ export default Slider;
+ 
