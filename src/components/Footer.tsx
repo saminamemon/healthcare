@@ -4,14 +4,14 @@
 import Image from "next/image"
 
 
-export default function Footer(){
-    return(
+export default function Footer() {
+  return (
 
     <>
-      
 
-    
-    
+
+
+
       <div className=" w-full h-64 static bottom-0  bg-gradient-to-r from-white-200 to-indigo-200 text-center dark:bg-neutral-600 lg:text-left">
         <div className="container p-2">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 ">
@@ -124,13 +124,13 @@ export default function Footer(){
         </div>
 
         <div className="bg-indigo-50 p-4 text-center text-indigo-900">
-          Copyright © 2023 Health Care <br/>
-       
-          
+          Copyright © 2023 Health Care <br />
+
+
           Powered By:Softic Solutions
-          
+
         </div>
       </div>
     </>
-    )
+  )
 }

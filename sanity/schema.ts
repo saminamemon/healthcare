@@ -7,6 +7,6 @@ import Doctor from './Doctor'
 
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [Products,PatientData,Doctor],
+  types: [Products, PatientData, Doctor],
 
 }

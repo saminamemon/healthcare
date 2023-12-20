@@ -1,13 +1,14 @@
-import Section from "@/components/Section"
+import Section from "@/Components/Section"
 
 
 
-export default function About(){
+export default function About() {
 
 
 
 
-    return (
-      <div>
-  <Section /></div>
-    )}
+  return (
+    <div>
+      <Section /></div>
+  )
+}

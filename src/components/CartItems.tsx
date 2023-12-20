@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function CartItems() {
   const [products, setProducts] = useState<any>(null);
- const [totalAmount, setTotalAmount] = useState<number>(0);
+  const [totalAmount, setTotalAmount] = useState<number>(0);
   console.log("🚀 ~ file: CartItems.tsx:7 ~ CartItems ~ products:", products)
   const [state, setState] = useState(false);
   const { isSignedIn, userId } = useAuth();
@@ -16,13 +16,13 @@ export default function CartItems() {
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
-     
+
         const total = data.reduce((acc: number, item: any) => {
           return acc + item.product_quantity * item.product_price;
         }, 0);
         setTotalAmount(total);
       });
-  }, [isSignedIn, state,userId]);
+  }, [isSignedIn, state, userId]);
 
   async function deleteProduct(product_title: any) {
     const res = await fetch("/api/cart", {
@@ -33,14 +33,14 @@ export default function CartItems() {
       }),
     });
     setState(!state);
-   
+
   }
 
   async function handleIncrement(
     user_id: any,
     product_quantity: any,
     product_title: any,
-    product_price:any
+    product_price: any
   ) {
     try {
       await fetch("/api/cart", {
@@ -49,7 +49,7 @@ export default function CartItems() {
           user_id: user_id,
           product_quantity: product_quantity,
           product_title: product_title,
-          product_price:product_price
+          product_price: product_price
         }),
       });
       setState(!state);
@@ -142,9 +142,9 @@ export default function CartItems() {
       </div>
       <div> <h1 className="text-2xl p-5 text-indigo-800 font-bold">Total Amount: {totalAmount.toFixed(2)}</h1></div>
 
-   
 
-    
+
+
     </>
   );
 }

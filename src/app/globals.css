@@ -6,6 +6,7 @@
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -17,19 +18,12 @@
     overflow: hidden;
     white-space: nowrap;
     border: 1px solid #7ea0b3;
-    
+
 
     padding-top: 10px;
 }
 
 .marquee-content {
     animation: marqueeScroll 40s linear infinite;
-    
+
 }
-
-
-
-
-
-
-

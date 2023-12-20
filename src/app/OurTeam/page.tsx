@@ -62,7 +62,7 @@
 //     </>
 //   );
 // }
-import Feature from "@/components/Feature";
+import Feature from "@/Components/Feature";
 
 
 

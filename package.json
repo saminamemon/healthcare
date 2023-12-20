@@ -10,6 +10,11 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.25.4",
+    "@google/generative-ai": "^0.1.2",
+    "@hookform/resolvers": "^3.3.2",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.18.0",
     "@stripe/stripe-js": "^2.1.10",
@@ -19,7 +24,8 @@
     "@vercel/postgres": "^0.4.2",
     "autoprefixer": "10.4.14",
     "axios": "^1.6.2",
-    "dialogflow-fulfillment": "^0.6.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
     "dotenv": "^16.3.1",
     "drizzle-orm": "^0.28.6",
     "eslint": "8.45.0",
@@ -29,15 +35,19 @@
     "lucide-react": "^0.287.0",
     "next": "^13.5.4",
     "next-sanity": "^5.5.8",
-    "openai": "^4.20.1",
     "postcss": "^8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.49.2",
     "react-icons": "^4.11.0",
+    "react-markdown": "^9.0.1",
     "sanity": "^3.18.0",
     "styled-components": "5.2",
     "swiper": "^11.0.4",
+    "tailwind-merge": "^2.1.0",
     "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "5.1.6",
+    "zod": "^3.22.4"
   }
 }

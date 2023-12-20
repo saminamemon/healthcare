@@ -1,4 +1,4 @@
-import Slug from "@/components/Slug";
+import Slug from "@/Components/Slug";
 
 
 

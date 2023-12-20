@@ -1,4 +1,4 @@
- "use client"
+"use client"
 
 
 
@@ -43,52 +43,52 @@ export default function Header() {
     setCurrentIndex(newIndex);
   };
 
-  const goToSlide = (slideIndex:number) => {
+  const goToSlide = (slideIndex: number) => {
     setCurrentIndex(slideIndex);
   };
 
   return (
     <div className='bg-gradient-to-r from-indigo-200 to-white-200'>
-    <div className='max-w-[1800px] h-[780px] w-full m-auto py-16 px-4 relative group'>
-      <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='w-full h-full rounded-2xl bg-center contrast-125 bg-cover duration-500'
-      ></div>
-    
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
-      </div>
-    
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <BsChevronCompactRight onClick={nextSlide} size={30} />
-      </div>
-      <div className='flex top-4 justify-center py-2'>
-        {slides.map((slide, slideIndex) => (
-           <div
-           key={slideIndex}
-           onClick={() => goToSlide(slideIndex)}
-           className='text-2xl cursor-pointer'
-         >
-            <RxDotFilled />
-          </div>
-        ))}
-          </div>
-  </div>
-           <div className="bg-gradient-to-r from-indigo-200 to-white-500  py-24 sm:py-32">
-  <div className="mx-auto max-w-7xl px-6 lg:px-8">
-    <h2 className="text-center text-4xl font-semibold leading-8 text-indigo-900">Trusted by the world’s most innovative teams</h2>
-     <div className="mx-auto  mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-10 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-      
-       <Image className="col-span-2 max-h-55 w-full object-contain contrast-125 lg:col-span-1" src="/logo1.jpeg" alt="Transistor" width="208" height="48"/>
-      <Image className="col-span-2 max-h-55 w-full object-contain contrast-125 lg:col-span-1" src="/Hamdard.png" alt="Reform" width="158" height="48"/>
-       <Image className="col-span-2 max-h-55 w-full object-contain contrast-125 lg:col-span-1" src="/Martin.jpg" alt="Tuple" width="158" height="48"/>
-       <Image className="col-span-2 max-h-55 w-full object-contain contrast-125 sm:col-start-2 lg:col-span-1" src="/Kaizen.jpeg" alt="SavvyCal" width="146" height="158"/>
-       <Image className="col-span-2 col-start-2 max-h-90 w-full contrast-125 object-contain sm:col-start-auto lg:col-span-1" src="/Royal.jpg" alt="Statamic" width="158" height="48"/>
-      
+      <div className='max-w-[1800px] h-[780px] w-full m-auto py-16 px-4 relative group'>
+        <div
+          style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+          className='w-full h-full rounded-2xl bg-center contrast-125 bg-cover duration-500'
+        ></div>
 
-</div>
+        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+          <BsChevronCompactLeft onClick={prevSlide} size={30} />
+        </div>
+
+        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+          <BsChevronCompactRight onClick={nextSlide} size={30} />
+        </div>
+        <div className='flex top-4 justify-center py-2'>
+          {slides.map((slide, slideIndex) => (
+            <div
+              key={slideIndex}
+              onClick={() => goToSlide(slideIndex)}
+              className='text-2xl cursor-pointer'
+            >
+              <RxDotFilled />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+      <div className="bg-gradient-to-r from-indigo-200 to-white-500  py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <h2 className="text-center text-4xl font-semibold leading-8 text-indigo-900">Trusted by the world’s most innovative teams</h2>
+          <div className="mx-auto  mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-10 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+
+            <Image className="col-span-2 max-h-55 w-full object-contain contrast-125 lg:col-span-1" src="/logo1.jpeg" alt="Transistor" width="208" height="48" />
+            <Image className="col-span-2 max-h-55 w-full object-contain contrast-125 lg:col-span-1" src="/Hamdard.png" alt="Reform" width="158" height="48" />
+            <Image className="col-span-2 max-h-55 w-full object-contain contrast-125 lg:col-span-1" src="/Martin.jpg" alt="Tuple" width="158" height="48" />
+            <Image className="col-span-2 max-h-55 w-full object-contain contrast-125 sm:col-start-2 lg:col-span-1" src="/Kaizen.jpeg" alt="SavvyCal" width="146" height="158" />
+            <Image className="col-span-2 col-start-2 max-h-90 w-full contrast-125 object-contain sm:col-start-auto lg:col-span-1" src="/Royal.jpg" alt="Statamic" width="158" height="48" />
+
+
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

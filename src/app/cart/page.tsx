@@ -1,14 +1,14 @@
 "use client"
 
-import CartItems from '@/components/CartItems'
-import React from 'react'
+import CartItems from '@/Components/CartItems'
 
-export  function cart() {
+
+export default function cart() {
   return (
     <>
 
-    <CartItems />
-    
+      <CartItems />
+
     </>
   )
 }

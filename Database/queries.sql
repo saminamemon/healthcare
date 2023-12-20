@@ -15,4 +15,3 @@ ALTER TABLE cartdata
 ADD CONSTRAINT UNIQUENESS UNIQUE (
          product_title
 );
--- // user_id,

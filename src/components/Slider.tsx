@@ -19,7 +19,7 @@ const Slider = () => {
       </div>
     </>
   );
- };
- 
- export default Slider;
- 
+};
+
+export default Slider;
+
