@@ -69,11 +69,11 @@ export default function Gemini() {
 
 	return (
 		<main className='flex flex-col items-center w-full mx-auto py-10 px-6 space-y-4'>
-			<h1 className='scroll-m-20 text-3xl text-center font-extrabold tracking-tight lg:text-5xl text-gray-900'>
-			Search diseases & conditions
+			<h1 className=' text-indigo-800 scroll-m-20 text-3xl text-center font-extrabold tracking-tight lg:text-5xl '>
+			Ask Anything About Your Diseases And Condition
 			</h1>
-			<p className='font-semibold scroll-m-20 text-center text-xl'>
-				Ask, Symptoms, GenerateAnswers ⚡
+			<p className='font-semibold scroll-m-20 text-center text-xl text-indigo-800'>
+				 Generate ⚡
 			</p>
 
 			<div className='w-full '>
@@ -93,7 +93,7 @@ export default function Gemini() {
 									name='prompt'
 									render={({ field }) => (
 										<FormItem>
-											<FormLabel className='font-bold'>Ask </FormLabel>
+											<FormLabel className='font-bold text-indigo-800'>Ask </FormLabel>
 											<FormControl>
 												<Textarea
 													placeholder='Enter a prompt to refine or construct.'
@@ -124,25 +124,25 @@ export default function Gemini() {
 				{/* Web Copy & Description */}
 				<div className='col-span-1 hidden md:block'>
 					<div className='flex flex-col space-y-4 max-w-xl '>
-						<h3 className='scroll-m-20 text-xl text-left font-semibold tracking-tight'>
+					 <h3 className='scroll-m-20 text-xl text-left font-semibold tracking-tight'>
 						
 						</h3>
-						<p className='text-left text-sm'>
-						Find diseases & condition
-							<b className='font-semibold'>
-							Search diseases & conditions
+						<p className='text-left text-sm text-indigo-800'>
+						Find 
+							<b className='font-semibold text-indigo-800'>
+							Search 
 							</b>
 							.
-						</p>
-						<p className='text-left text-sm'>
-						"Can you tell me more about your condition? What symptoms are you experiencing and how have you been managing them?" 1
-"How has your treatment been going? Are there any specific aspects you're concerned about or questions you have?" /n1
-"Are there any lifestyle changes you've had to make due to your condition? How have these changes affected your daily life?" /n 
-"What advice would you give to someone else dealing with a similar condition?/n Is there anything you've found particularly helpful?"
+						</p> 
+						 <p className='text-left text-sm text-justify text-indigo-800'>
+						"Can you tell me more about your condition?<br/> What symptoms are you experiencing and how have you been managing them?" <br/>
+"How has your treatment been going? <br/>Are there any specific aspects you're concerned about or questions you have?" <br/>
+"Are there any lifestyle changes you've had to make due to your condition?<br/> How have these changes affected your daily life?" <br/>
+"What advice would you give to someone else dealing with a similar condition?<br/> Is there anything you've found particularly helpful?"
 						</p>
 						<p className='text-left text-sm'>
 						
-						</p>
+						</p> 
 					</div>
 				</div>
 			</div>
@@ -264,7 +264,7 @@ const RenderData = ({ data }: { data: any }) => {
 									/>
 								</svg>
 							</button>
-							<blockquote className='italic pr-4'>
+							<blockquote className='italic pr-4 text-justify'>
 								<p>{prompt.description}</p>
 							</blockquote>
 						</div>
